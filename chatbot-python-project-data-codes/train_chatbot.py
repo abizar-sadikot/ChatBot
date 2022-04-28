@@ -1,3 +1,5 @@
+#pip install tensorflow, keras, pickle, nltk
+
 import nltk
 import ssl
 try:
