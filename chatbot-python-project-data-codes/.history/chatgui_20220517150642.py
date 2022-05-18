@@ -63,9 +63,11 @@ def chatbot_response(msg):
     res = getResponse(ints, intents)
     return res
 
+
 #Creating GUI with tkinter
 import tkinter
 from tkinter import *
+
 
 def send():
     msg = EntryBox.get("1.0",'end-1c').strip()

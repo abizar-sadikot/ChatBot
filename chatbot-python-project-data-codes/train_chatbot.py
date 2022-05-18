@@ -11,6 +11,7 @@ else:
 nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('omw-1.4')
+
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 import json
@@ -28,7 +29,6 @@ documents = []
 ignore_words = ['?', '!']
 data_file = open('intents.json').read()
 intents = json.loads(data_file)
-
 
 for intent in intents['intents']:
     for pattern in intent['patterns']:
