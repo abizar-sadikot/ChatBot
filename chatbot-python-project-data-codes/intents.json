@@ -69,9 +69,9 @@
          "responses": ["Loading hospital details"],
          "context": [""]
         }, 
-        {"tag": "Valtech",
-        "patterns": ["Engineer", "backend", "frontend"],
-        "responses": ["Agile development", "fullstack"],
+        {"tag": "",
+        "patterns": [],
+        "responses": [],
         "context": []}
    ]
 }
