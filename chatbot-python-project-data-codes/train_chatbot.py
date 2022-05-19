@@ -108,7 +108,8 @@ hist = model.fit(
     np.array(train_y), 
     epochs=200, 
     batch_size=5, 
-    verbose=1
+    verbose=1,
+    validation_split=0.2
     )
 model.save('chatbot_model.h5', hist)
 
