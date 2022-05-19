@@ -1,3 +1,4 @@
+from turtle import bgcolor, color
 import nltk
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
@@ -98,11 +99,11 @@ ChatLog['yscrollcommand'] = scrollbar.set
 
 #Create Button to send message
 SendButton = Button(base, font=("Verdana",12,'bold'), text="Send", width="12", height=5,
-                    bd=0, bg="#32de97", activebackground="#3c9d9b",fg='#ffffff',
-                    command= send )
+                    bd=0, bg="#32de97", activebackground="#3c9d9b",fg='black',
+                    command= send)
 
 #Create the box to enter message
-EntryBox = Text(base, bd=0, bg="grey",width="29", height="5", font="Arial")
+EntryBox = Text(base, bd=0, fg="black", bg="#EAEAEA",width="29", height="5", font="Arial")
 EntryBox.bind("<Return>", send)
 
 
